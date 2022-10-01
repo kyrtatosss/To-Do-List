@@ -1,0 +1,162 @@
+[debug] [2022-10-01T16:49:44.664Z] ----------------------------------------------------------------------
+[debug] [2022-10-01T16:49:44.667Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-01T16:49:44.668Z] CLI Version:   11.13.0
+[debug] [2022-10-01T16:49:44.668Z] Platform:      win32
+[debug] [2022-10-01T16:49:44.668Z] Node Version:  v16.17.0
+[debug] [2022-10-01T16:49:44.669Z] Time:          Sat Oct 01 2022 19:49:44 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-10-01T16:49:44.669Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-01T16:49:44.726Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2022-10-01T16:49:44.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-01T16:49:44.733Z] > authorizing via signed-in user (konstantinoskyrtatos.g13@gmail.com)
+[debug] [2022-10-01T16:49:44.733Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\konst\OneDrive\Υπολογιστής\to do list
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-01T16:49:50.306Z] Using project from CLI flag: to-do-list-8cbb8
+[debug] [2022-10-01T16:49:50.307Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 [none]
+[debug] [2022-10-01T16:49:50.663Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 200
+[debug] [2022-10-01T16:49:50.663Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 {"projectId":"to-do-list-8cbb8","projectNumber":"268931655427","displayName":"To Do List","name":"projects/to-do-list-8cbb8","resources":{"hostingSite":"to-do-list-8cbb8","realtimeDatabaseInstance":"to-do-list-8cbb8-default-rtdb"},"state":"ACTIVE","etag":"1_2c93eec7-f118-4cfd-87f7-a22c58f0b9fe"}
+[info] i  Using project to-do-list-8cbb8 (To Do List) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-10-01T16:49:50.668Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/to-do-list-8cbb8/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-10-01T16:49:50.668Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/to-do-list-8cbb8/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/to-do-list-8cbb8
+[debug] [2022-10-01T16:49:51.861Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/to-do-list-8cbb8/services/firebasedatabase.googleapis.com 200
+[debug] [2022-10-01T16:49:51.861Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/to-do-list-8cbb8/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-10-01T16:49:51.862Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/to-do-list-8cbb8/locations/-/instances/to-do-list-8cbb8-default-rtdb [none]
+[debug] [2022-10-01T16:49:52.266Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/to-do-list-8cbb8/locations/-/instances/to-do-list-8cbb8-default-rtdb 200
+[debug] [2022-10-01T16:49:52.266Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/to-do-list-8cbb8/locations/-/instances/to-do-list-8cbb8-default-rtdb {"name":"projects/268931655427/locations/europe-west1/instances/to-do-list-8cbb8-default-rtdb","project":"projects/268931655427","databaseUrl":"https://to-do-list-8cbb8-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-10-01T16:49:52.269Z] >>> [apiv2][query] GET https://to-do-list-8cbb8-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-10-01T16:49:52.453Z] <<< [apiv2][status] GET https://to-do-list-8cbb8-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-10-01T16:49:52.453Z] <<< [apiv2][body] GET https://to-do-list-8cbb8-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2022-10-01T16:49:52.590Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:387:5)
+    at validateString (node:internal/validators:121:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:123:45)
+    at Config.writeProjectFile (C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:32)
+    at writeDBRules (C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:33:12)
+    at doSetup (C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:123:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async init (C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-01T16:49:55.509Z] ----------------------------------------------------------------------
+[debug] [2022-10-01T16:49:55.511Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\konst\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-01T16:49:55.511Z] CLI Version:   11.13.0
+[debug] [2022-10-01T16:49:55.511Z] Platform:      win32
+[debug] [2022-10-01T16:49:55.512Z] Node Version:  v16.17.0
+[debug] [2022-10-01T16:49:55.512Z] Time:          Sat Oct 01 2022 19:49:55 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-10-01T16:49:55.512Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-01T16:49:55.562Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2022-10-01T16:49:55.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-01T16:49:55.566Z] > authorizing via signed-in user (konstantinoskyrtatos.g13@gmail.com)
+[debug] [2022-10-01T16:49:55.567Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\konst\OneDrive\Υπολογιστής\to do list
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-01T16:50:11.094Z] Using project from CLI flag: to-do-list-8cbb8
+[debug] [2022-10-01T16:50:11.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 [none]
+[debug] [2022-10-01T16:50:11.479Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 200
+[debug] [2022-10-01T16:50:11.479Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/to-do-list-8cbb8 {"projectId":"to-do-list-8cbb8","projectNumber":"268931655427","displayName":"To Do List","name":"projects/to-do-list-8cbb8","resources":{"hostingSite":"to-do-list-8cbb8","realtimeDatabaseInstance":"to-do-list-8cbb8-default-rtdb"},"state":"ACTIVE","etag":"1_2c93eec7-f118-4cfd-87f7-a22c58f0b9fe"}
+[info] i  Using project to-do-list-8cbb8 (To Do List) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-10-01T16:50:59.409Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-10-01T16:50:59.520Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-10-01T16:50:59.520Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.10.0","browserURL":"https://www.gstatic.com/firebasejs/9.10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.10.0/firebase.tgz"},"live":{"version":"9.10","browserURL":"https://www.gstatic.com/firebasejs/live/9.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.10/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.10.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.10.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.10.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.10.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.10.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\konst\OneDrive\Υπολογιστής\to do list is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=296745628&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-01T16:52:07.868Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-10-01T16:52:07.868Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-10-01T16:52:08.263Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-10-01T16:52:08.263Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-10-01T16:52:08.269Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-10-01T16:52:08.699Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-10-01T16:52:08.699Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kyrtatosss","id":114825504,"node_id":"U_kgDOBtgZIA","avatar_url":"https://avatars.githubusercontent.com/u/114825504?v=4","gravatar_id":"","url":"https://api.github.com/users/kyrtatosss","html_url":"https://github.com/kyrtatosss","followers_url":"https://api.github.com/users/kyrtatosss/followers","following_url":"https://api.github.com/users/kyrtatosss/following{/other_user}","gists_url":"https://api.github.com/users/kyrtatosss/gists{/gist_id}","starred_url":"https://api.github.com/users/kyrtatosss/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kyrtatosss/subscriptions","organizations_url":"https://api.github.com/users/kyrtatosss/orgs","repos_url":"https://api.github.com/users/kyrtatosss/repos","events_url":"https://api.github.com/users/kyrtatosss/events{/privacy}","received_events_url":"https://api.github.com/users/kyrtatosss/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2022-10-01T16:51:47Z","updated_at":"2022-10-01T16:51:47Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as kyrtatosss 
+[info] 
+[debug] [2022-10-01T16:52:28.894Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:52:29.184Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-10-01T16:52:29.184Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-10-01T16:53:16.905Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:17.265Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:17.265Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-10-01T16:53:17.591Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:17.917Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:17.918Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-10-01T16:53:24.635Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:24.829Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:25.172Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:25.172Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-10-01T16:53:25.673Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:25.673Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-10-01T16:53:26.303Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:26.593Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:26.593Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrtatosss/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-10-01T16:53:38.221Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:53:38.547Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:53:38.547Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-10-01T16:54:00.031Z] >>> [apiv2][query] GET https://api.github.com/repos/kyrta/actions/secrets/public-key type=owner
+[debug] [2022-10-01T16:54:00.338Z] <<< [apiv2][status] GET https://api.github.com/repos/kyrta/actions/secrets/public-key 404
+[debug] [2022-10-01T16:54:00.339Z] <<< [apiv2][body] GET https://api.github.com/repos/kyrta/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
